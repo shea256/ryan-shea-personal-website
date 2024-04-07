@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const getLayout = Component.getLayout || getDefaultLayout;
 
-  React.useEffect(() => {
+  /*React.useEffect(() => {
     posthog.init("phc_jFlJqpi333LZJJRxwjiFTkKI2Ufv3Pgf0hnbrPuZdLL", {
       api_host: "https://app.posthog.com",
     });
@@ -55,24 +55,23 @@ export default function App({ Component, pageProps }: AppProps) {
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, []);
+  }, []);*/
 
   return (
     <ChakraProvider theme={theme}>
       <DefaultSeo
-        title="Adam Majmudar"
-        description="I'm a constant learner and aspiring technical generalist. I'm also a founding enginer at thirdweb and on gap year from the University of Pennsylvania."
+        title="Ryan Shea"
+        description="Founder of Opus, Co-creator of Stacks"
         openGraph={{
-          title: "Adam Majmudar",
-          description:
-            "I'm a constant learner and aspiring technical generalist. I'm also a founding enginer at thirdweb and on gap year from the University of Pennsylvania.",
+          title: "Ryan Shea",
+          description: "Founder of Opus, Co-creator of Stacks",
           images: [
             {
               url: "https://adammaj.com/og-image-dark.jpg",
               type: "image/jpeg",
             },
           ],
-          siteName: "Adam Majmudar",
+          siteName: "Ryan Shea",
         }}
       />
       {getLayout(<Component {...pageProps} />)}
