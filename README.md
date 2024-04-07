@@ -1,1 +1,1 @@
-[adammaj.com](https://adammaj.com)
+[shea.io](https://www.shea.io)
