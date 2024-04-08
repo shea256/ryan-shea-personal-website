@@ -11,8 +11,8 @@ import {
   MenuList,
   Icon,
   MenuGroup,
+  IconButtonProps
 } from "@chakra-ui/react";
-import { IconButtonProps } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { PropsWithChildren } from "react";
@@ -49,10 +49,12 @@ function Navigation({
 function Layout({ children }: PropsWithChildren) {
   return (
     <Container
-      position="relative"
-      mt={{ base: 16, md: 20 }}
-      pb={{ base: 8, md: "10em" }}
-      gap={{ md: 10 }}
+      sx={{
+        position: "relative",
+        mt: { base: 16, md: 20 },
+        pb: { base: 8, md: "10em" },
+        gap: { md: 10 }
+      }}
     >
       <Flex
         position="absolute"
@@ -74,10 +76,10 @@ function Layout({ children }: PropsWithChildren) {
             <Text fontWeight="bold" fontSize="smaller">
               FIND ME ON
             </Text>
-            <Navigation link="https://twitter.com/majmudaradam" isExternal>
+            <Navigation link="https://twitter.com/ryaneshea" isExternal>
               Twitter
             </Navigation>
-            <Navigation link="https://github.com/adam-maj" isExternal>
+            <Navigation link="https://github.com/shea256" isExternal>
               GitHub
             </Navigation>
             <Navigation link="https://www.linkedin.com/in/ryaneshea/" isExternal>
@@ -137,10 +139,7 @@ function Layout({ children }: PropsWithChildren) {
                   </MenuGroup>
                   <MenuGroup title="FIND ME ON">
                     <VStack align="flex-start" px={4} spacing={3} mb={2}>
-                      <Navigation
-                        link="https://twitter.com/ryaneshea"
-                        isExternal
-                      >
+                      <Navigation link="https://twitter.com/ryaneshea" isExternal>
                         Twitter
                       </Navigation>
                       <Navigation link="https://github.com/shea256" isExternal>
