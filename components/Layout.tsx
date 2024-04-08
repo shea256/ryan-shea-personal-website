@@ -133,12 +133,12 @@ function Layout({ children }: PropsWithChildren) {
                   <MenuGroup title="FIND ME ON">
                     <VStack align="flex-start" px={4} spacing={3} mb={2}>
                       <Navigation
-                        link="https://twitter.com/majmudaradam"
+                        link="https://twitter.com/ryaneshea"
                         isExternal
                       >
                         Twitter
                       </Navigation>
-                      <Navigation link="https://github.com/adam-maj" isExternal>
+                      <Navigation link="https://github.com/shea256" isExternal>
                         GitHub
                       </Navigation>
                     </VStack>
