@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }: AppProps) {
           description: "Founder of Opus, Co-creator of Stacks",
           images: [
             {
-              url: "https://adammaj.com/og-image-dark.jpg",
+              url: "https://www.shea.io/og-image-dark.jpg",
               type: "image/jpeg",
             },
           ],

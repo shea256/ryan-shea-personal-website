@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# archive
+archive
+content/archive
+content/books/archive
+content/writing/archive

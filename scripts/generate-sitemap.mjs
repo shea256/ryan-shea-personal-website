@@ -42,24 +42,24 @@ async function main() {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://adammaj.com</loc>
+    <loc>https://www.shea.io</loc>
   </url>
   <url>
-    <loc>https://adammaj.com/writing</loc>
+    <loc>https://www.shea.io/writing</loc>
   </url>
   <url>
-    <loc>https://adammaj.com/engineering</loc>
+    <loc>https://www.shea.io/engineering</loc>
   </url>
   <url>
-    <loc>https://adammaj.com/books</loc>
+    <loc>https://www.shea.io/books</loc>
   </url>
   <url>
-    <loc>https://adammaj.com/notes</loc>
+    <loc>https://www.shea.io/notes</loc>
   </url>${allSlugs
     .map((slug) => {
       return `
   <url>
-    <loc>${`https://adammaj.com${slug}`}</loc>
+    <loc>${`https://www.shea.io${slug}`}</loc>
   </url>`;
     })
     .join("")}
