@@ -22,6 +22,8 @@ interface BooksProps {
   book?: Content<Book>;
 }
 
+const siteName = "Ryan Shea"
+
 const Books: NextPageWithLayout<BooksProps> = ({ books, book }) => {
   if (book) {
     return (
@@ -54,7 +56,7 @@ const Books: NextPageWithLayout<BooksProps> = ({ books, book }) => {
 
   return (
     <>
-      <NextSeo title="Books | Adam Majmudar" />
+      <NextSeo title={"Engineering | " + siteName} />
       <Stack spacing={5}>
         {books
           .slice()

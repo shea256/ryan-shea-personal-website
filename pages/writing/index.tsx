@@ -16,10 +16,12 @@ interface WritingProps {
   posts: Post[];
 }
 
+const siteName = "Ryan Shea"
+
 const Writing: NextPageWithLayout<WritingProps> = ({ posts }) => {
   return (
     <>
-      <NextSeo title="Writing | Adam Majmudar" />
+      <NextSeo title={"Engineering | " + siteName} />
       <Flex direction="column" align="flex-start" width="100%" gap={3}>
         <Divider width="100%" />
         {posts.map((post) => (

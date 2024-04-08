@@ -17,10 +17,12 @@ interface EngineeringProps {
   builds: Build[];
 }
 
+const siteName = "Ryan Shea"
+
 const Engineering: NextPageWithLayout<EngineeringProps> = ({ builds }) => {
   return (
     <>
-      <NextSeo title="Engineering | Adam Majmudar" />
+      <NextSeo title={"Engineering | " + siteName} />
       <Flex direction="column" align="flex-start">
         {builds.map((build) => (
           <Stack width="100%" key={build.title}>
