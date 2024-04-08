@@ -23,13 +23,13 @@ const Post: NextPageWithLayout<PostProps> = ({ post }) => {
           images: [
             {
               url:
-                post.metadata.image || "https://adammaj.com/og-image-dark.jpg",
+                post.metadata.image || "https://github.com/shea256/shea.io-bookshelf/blob/main/public/og-image.png?raw=true",
             },
           ],
         }}
       />
       <Flex
-        sx= {{
+        sx={{
           direction: "column",
           gap: 2
         }}
