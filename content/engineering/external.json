@@ -5,5 +5,12 @@
     "date": "Jan 1, 2023",
     "image": "https://github.com/shea256/shea.io-bookshelf/blob/main/public/opuswallet-website.png?raw=true",
     "url": "https://www.opuswallet.com"
+  },
+  {
+    "title": "Stacks",
+    "description": "The #1 smart contract blockchain built on Bitcoin",
+    "date": "June 1, 2013",
+    "image": "https://github.com/shea256/shea.io-bookshelf/blob/main/public/stacks-website.png?raw=true",
+    "url": "https://www.stacks.co/"
   }
 ]
