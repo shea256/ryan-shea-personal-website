@@ -28,7 +28,12 @@ const Post: NextPageWithLayout<PostProps> = ({ post }) => {
           ],
         }}
       />
-      <Flex direction="column" gap={2}>
+      <Flex
+        sx= {{
+          direction: "column",
+          gap: 2
+        }}
+      >
         <Heading size="lg">{post.metadata.title}</Heading>
         <Prose>
           <MDXRemote compiledSource={post.source} />

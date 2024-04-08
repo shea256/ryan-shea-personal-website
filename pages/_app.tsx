@@ -4,7 +4,7 @@ import { Prose, withProse } from "@nikolovlazar/chakra-ui-prose";
 import Layout from "../components/Layout";
 import { ReactElement } from "react";
 import { DefaultSeo } from "next-seo";
-import posthog from "posthog-js";
+//import posthog from "posthog-js";
 import React from "react";
 import { useRouter } from "next/router";
 import { Lora } from "@next/font/google";
@@ -40,6 +40,15 @@ const getDefaultLayout = (page: ReactElement) => (
   </Layout>
 );
 
+const title = "Ryan Shea"
+const description = "Founder of Opus, Co-creator of Stacks"
+const images = [
+  {
+    url: "https://github.com/shea256/shea.io-bookshelf/blob/main/public/og-image.png?raw=true",
+    type: "image/png",
+  },
+]
+
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const getLayout = Component.getLayout || getDefaultLayout;
@@ -60,18 +69,13 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <DefaultSeo
-        title="Ryan Shea"
-        description="Founder of Opus, Co-creator of Stacks"
+        title={title}
+        description={description}
         openGraph={{
-          title: "Ryan Shea",
-          description: "Founder of Opus, Co-creator of Stacks",
-          images: [
-            {
-              url: "https://www.shea.io/og-image-dark.jpg",
-              type: "image/jpeg",
-            },
-          ],
-          siteName: "Ryan Shea",
+          title: title,
+          description: description,
+          images: images,
+          siteName: title,
         }}
       />
       {getLayout(<Component {...pageProps} />)}
