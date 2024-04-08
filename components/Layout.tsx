@@ -9,14 +9,16 @@ import {
   MenuButton,
   IconButton,
   MenuList,
-  MenuItem,
   Icon,
   MenuGroup,
 } from "@chakra-ui/react";
+import { IconButtonProps } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { PropsWithChildren } from "react";
 import { FiMenu } from "react-icons/fi";
+
+const TypedIconButton = IconButton as React.ComponentType<IconButtonProps>;
 
 function Navigation({
   link,
@@ -115,7 +117,7 @@ function Layout({ children }: PropsWithChildren) {
               </HStack>
               <Menu>
                 <MenuButton
-                  as={IconButton}
+                  as={TypedIconButton}
                   aria-label="Options"
                   icon={<Icon as={FiMenu} boxSize={4} />}
                   variant="outline"
@@ -140,6 +142,9 @@ function Layout({ children }: PropsWithChildren) {
                       </Navigation>
                       <Navigation link="https://github.com/shea256" isExternal>
                         GitHub
+                      </Navigation>
+                      <Navigation link="https://www.linkedin.com/in/ryaneshea/" isExternal>
+                        LinkedIn
                       </Navigation>
                     </VStack>
                   </MenuGroup>
