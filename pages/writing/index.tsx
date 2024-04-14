@@ -21,7 +21,7 @@ const siteName = "Ryan Shea"
 const Writing: NextPageWithLayout<WritingProps> = ({ posts }) => {
   return (
     <>
-      <NextSeo title={"Engineering | " + siteName} />
+      <NextSeo title={"Writing | " + siteName} />
       <Flex direction="column" align="flex-start" width="100%" gap={3}>
         <Divider width="100%" />
         {posts.map((post) => (
