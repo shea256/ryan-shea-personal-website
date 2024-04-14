@@ -85,6 +85,12 @@ function Layout({ children }: PropsWithChildren) {
             <Navigation link="https://www.linkedin.com/in/ryaneshea/" isExternal>
               LinkedIn
             </Navigation>
+            <Navigation link="https://www.instagram.com/ryaneshea/" isExternal>
+              Instagram
+            </Navigation>
+            <Navigation link="mailto:ryanshea@shea.io" isExternal>
+              Email
+            </Navigation>
           </VStack>
         </VStack>
       </Flex>
@@ -147,6 +153,12 @@ function Layout({ children }: PropsWithChildren) {
                       </Navigation>
                       <Navigation link="https://www.linkedin.com/in/ryaneshea/" isExternal>
                         LinkedIn
+                      </Navigation>
+                      <Navigation link="https://www.instagram.com/ryaneshea/" isExternal>
+                        Instagram
+                      </Navigation>
+                      <Navigation link="mailto:ryanshea@shea.io" isExternal>
+                        Email
                       </Navigation>
                     </VStack>
                   </MenuGroup>
