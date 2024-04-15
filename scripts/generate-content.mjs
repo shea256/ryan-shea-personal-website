@@ -1,4 +1,6 @@
 import { serialize } from "next-mdx-remote/serialize";
+import remarkGfm from 'remark-gfm'
+import remarkFrontmatter from 'remark-frontmatter'
 import path from "path";
 import fs from "fs";
 
@@ -17,8 +19,14 @@ async function writing() {
         const contentPath = path.join(basePath, fileName);
         const fileContents = fs.readFileSync(contentPath, "utf8");
         const source = await serialize(fileContents, {
+          scope: {},
+          mdxOptions: {
+            development: false,
+            remarkPlugins: [],
+            rehypePlugins: [],
+            format: 'mdx',
+          },
           parseFrontmatter: true,
-          mdxOptions: { development: false },
         });
 
         return {

@@ -48,14 +48,7 @@ function Navigation({
 
 function Layout({ children }: PropsWithChildren) {
   return (
-    <Container
-      sx={{
-        position: "relative",
-        mt: { base: 16, md: 20 },
-        pb: { base: 8, md: "10em" },
-        gap: { md: 10 }
-      }}
-    >
+    <Container position="relative" mt={{ base: 16, md: 20 }} pb={{ base: 8, md: "10em" }} gap={{ md: 10 }}>
       <Flex
         position="absolute"
         right="100%"
