@@ -1,6 +1,4 @@
 import { serialize } from "next-mdx-remote/serialize";
-import remarkGfm from 'remark-gfm'
-import remarkFrontmatter from 'remark-frontmatter'
 import path from "path";
 import fs from "fs";
 
